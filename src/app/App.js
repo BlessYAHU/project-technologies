@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-//import logo from '../logo.svg';
 import './app.css';
-// import TechList from '../techlist/techlist';
 import ProjectList from '../projectlist/projectlist';
-//import HeaderNav from '../headnav/headernav';
 
-class App extends Component {
-  render() {
+  let App = ()=>{
     return (
         <div>
             <div className="body">
@@ -14,7 +10,6 @@ class App extends Component {
             </div>
         </div>
     );
-  }
 }
 
 export default App;

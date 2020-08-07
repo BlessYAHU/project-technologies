@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { Link} from 'react-router-dom'
 
-class HeaderNav extends Component {
-  // constructor(props) {
-  //   super(props)
-  // }
-  render() {
+  let HeaderNav = ()=> {
     return (
         <div className="head-nav">
            <ul className="nav-items">
@@ -15,7 +11,6 @@ class HeaderNav extends Component {
           <div className="subnav"></div>
         </div>
     );
-  }
 }
 
 export default HeaderNav;

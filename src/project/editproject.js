@@ -1,9 +1,19 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+// import { useSelector } from 'react-redux'
 /// A type of Import
 class EditProject extends Component {
-  constructor(props) {
+//   let EditProject = ({projects, onProjectUpdate, match, projectNames}) => {
+//   let br =   (state) => {
+//       return {
+//         projectNames: getProjectsList(state.projectNames),
+//         projects: (()=> state.projects)()
+//       }
+//     }
+//     const [ProjectName, setProjectName] = useState('');
+//     const [Technologies, setTechnologies] = useState([]);
+ constructor(props) {
     super(props)
       console.log(props)
       this.state = {
@@ -29,9 +39,10 @@ class EditProject extends Component {
      this.handleChange = (e) => {
       this.setState({ Technologies: e.target.value });
     }
-  }
+ }
 
 
+  
   render() {
     var mapProjectsToOptions = this.props.projectNames.map(x=> <option key={`${x.id}:${x.Name}`} value={x.Name} selected={ x.Name === this.TargetProject.Name}>{x.Name}</option>)
     return (

@@ -10,10 +10,10 @@ import './app/app.css';
 import store from './store';
 import {Provider} from 'react-redux'
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import createHistory from 'history/createBrowserHistory'
+//import createHistory from 'history/createBrowserHistory'
 
 console.log(ProjectForm);
-const browserHistory = createHistory()
+//const browserHistory = createHistory()
 let projects = [
   {
     id: 1,
